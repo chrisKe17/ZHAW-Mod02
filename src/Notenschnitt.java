@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Notenschnitt {
     public static void main(String[] args) {
-        float note = 1;
+        float note;
         int anzNoten = 0;
         float totalNoten =0;
         System.out.println("Bitte geben sie ihre Noten ein: (0 für Eingabe beenden:) ");
