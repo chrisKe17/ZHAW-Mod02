@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
-public class PinWhile {
+public class PinDo {
     public static void main(String[] args) {
         boolean zustand = false;
         int versuchnr = 0;
         int versuche = 3;
 
-        while ((!zustand) && (versuchnr < 3)) {
-
+        do
+        {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Bitte geben sie den 3 stelligen Pin ein!");
             System.out.print("1. Ziffer: ");
@@ -31,5 +31,7 @@ public class PinWhile {
                 System.out.println("Sie haben noch " + versuche + " Versuche");
             }
         }
+        while ((!zustand) && (versuchnr < 3));
+
     }
 }
